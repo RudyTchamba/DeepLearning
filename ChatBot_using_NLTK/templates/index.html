@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Service Client Pikart</title>
+    <link rel="stylesheet" href="/home/redeus/DeepLearningProjects/model/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>Pikart</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-conversation="current">
+                    <i class="fas fa-message"></i>
+                    <span>Conversation Actuelle</span>
+                </button>
+                <button class="nav-item" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    <span>Nouveau Chat</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="settings-btn">
+                    <i class="fas fa-cog"></i>
+                    <span>Paramètres</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="chat-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="header-info">
+                        <h1>Service Client Pikart</h1>
+                        <p class="status"><span class="status-dot"></span>En ligne</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-btn" title="Informations">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                    <button class="header-btn" title="Plus d'options">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message-container initial-message">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p>Bonjour! 👋 Je suis l'assistant de service client Pikart. Comment puis-je vous aider aujourd'hui?</p>
+                        </div>
+                        <span class="message-time">Maintenant</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <div class="input-field">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            placeholder="Écrivez votre message..."
+                            autocomplete="off"
+                        >
+                        <div class="input-actions">
+                            <button class="action-btn" id="attachBtn" title="Joindre un fichier">
+                                <i class="fas fa-paperclip"></i>
+                            </button>
+                            <button class="action-btn" id="emojiBtn" title="Ajouter un emoji">
+                                <i class="fas fa-smile"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="send-btn" id="sendBtn" title="Envoyer">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-hint">
+                    Appuyez sur <kbd>Entrée</kbd> pour envoyer
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Emoji Picker (Simple) -->
+    <div class="emoji-picker" id="emojiPicker">
+        <div class="emoji-grid">
+            <span class="emoji" data-emoji="😀">😀</span>
+            <span class="emoji" data-emoji="😂">😂</span>
+            <span class="emoji" data-emoji="😍">😍</span>
+            <span class="emoji" data-emoji="🤔">🤔</span>
+            <span class="emoji" data-emoji="😍">💯</span>
+            <span class="emoji" data-emoji="🎉">🎉</span>
+            <span class="emoji" data-emoji="👍">👍</span>
+            <span class="emoji" data-emoji="👎">👎</span>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading-indicator" id="loadingIndicator">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/home/redeus/DeepLearningProjects/model/static/js/script.js"></script>
+</body>
+</html>
