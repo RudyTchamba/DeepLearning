@@ -1,0 +1,22 @@
+# Flask Web Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Machine Learning & Deep Learning
+tensorflow==2.13.0
+numpy==1.24.3
+keras==2.13.0
+
+# Natural Language Processing
+nltk==3.8.1
+
+# Utilities
+python-dotenv==1.0.0
+
+# Optional: For production deployment
+gunicorn==21.2.0
+
+# Optional: For CORS support if needed
+Flask-CORS==4.0.0
+
+gunicorn

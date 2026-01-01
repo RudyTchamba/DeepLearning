@@ -89,7 +89,7 @@ Avant de commencer, assurez-vous d'avoir installé:
 git clone https://github.com/RudyTchamba/DeepLearning/tree/main/ChatBot_using_NLTK
 
 # Accéder au répertoire du projet
-cd chatbot-pikart
+cd ChatBot_using_NLTK
 ```
 
 ### Configuration de l'environnement
