@@ -86,7 +86,7 @@ Avant de commencer, assurez-vous d'avoir installé:
 
 ```bash
 # Cloner le projet
-git clone https://github.com/votre-utilisateur/chatbot-pikart.git
+git clone https://github.com/RudyTchamba/DeepLearning/tree/main/ChatBot_using_NLTK
 
 # Accéder au répertoire du projet
 cd chatbot-pikart
