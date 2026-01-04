@@ -5,6 +5,7 @@ A deep learning project for kidney disease classification using Convolutional Ne
 ## 📋 Table of Contents
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
+- [Workflows](#workflows)
 - [Installation](#installation)
 - [Setup Instructions](#setup-instructions)
 - [Running the Project](#running-the-project)
@@ -64,7 +65,7 @@ Kidney_Disease_Classification/
 └── README.md                    # Project documentation
 ```
 
-## Workflows
+## 🔀 Workflows
 
 1. Update Config.yaml
 2. Update secrets.yaml [Optional]
