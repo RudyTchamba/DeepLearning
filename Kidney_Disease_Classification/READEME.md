@@ -106,7 +106,7 @@ source venv/bin/activate
 #### Using conda (Alternative)
 ```bash
 # Create conda environment
-conda create -n kidney-disease python=3.8 -y
+conda create -n kidney-disease python=3.10 -y
 
 # Activate conda environment
 conda activate kidney-disease
@@ -294,5 +294,3 @@ This project is part of a deep learning portfolio and is available for education
 ---
 
 **Note**: Make sure to update configuration files with your specific paths and parameters before running the project.
-
-
